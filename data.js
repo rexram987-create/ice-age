@@ -10,6 +10,7 @@ export const sources = [
  ['snow','מחקר מאובני פנתרים קדומים בהימלאיה, Proceedings B','https://pmc.ncbi.nlm.nih.gov/articles/PMC3843846/'],
  ['bison','מוזיאון הטבע בווינה — בעלי חיים של עידן הקרח','https://www.nhm-wien.ac.at/en/press/special_nhm_vienna_exhibition_at_the_fossilienwelt_weinviertel__ice_age_animals_-_the_world_of_woolly_rhinos_and_cave_lions'],
  ['etym','המוזיאון האמריקאי להיסטוריה של הטבע — מילון שורשי שמות מדעיים','https://research.amnh.org/paleontology/perissodactyl/concepts/glossary'],
+ ['mammoth-history','אוניברסיטת גטינגן — ממצאי התיאור המקורי של הממותה','https://idw-online.de/de/news146688'],
  ['rhino-size','מוזיאון הטבע בפדובה — גודל הקרנף הצמרירי','https://visitmnu.it/en/punto_di_interesse/the-woolly-rhinoceros/'],
  ['rhino-history','מחקר על חומר הטיפוס של הקרנף הצמרירי','https://www.rhinoresourcecenter.com/pdf_files/131/1312797146.pdf'],
  ['musk-history','מחקר על מיון כבשי המושק המאובנים','https://www.sciencedirect.com/science/article/pii/S1055790318302902'],
@@ -41,7 +42,7 @@ export const animals = [
 // A scientific description is often datable even when the first find is not.
 // Discovery describes the documented find, never an invented first encounter.
 const additions={
- mammoth:{discovery:'שרידי ממותות היו מוכרים לאנשים זמן רב לפני שהמדע נתן להם שם. בשנת 1799 תיאר יוהאן פרידריך בלומנבך את הממותה הצמרית כמין מדעי על סמך עצמות ושיניים מאובנות מאירואסיה. אין תאריך מוסכם לממצא הראשון אי פעם; מאוחר יותר נמצאו בסיביר גם גופות קפואות ששימרו עור ופרווה.',dimensions:'גובה בכתף: כ־3–3.5 מטרים. משקל: לרוב כ־4–6 טונות, לפי גיל ומין.',moreRefs:[]},
+ mammoth:{discovery:'שרידי ממותות היו מוכרים לאנשים זמן רב לפני שהמדע נתן להם שם. בשנת 1799 תיאר יוהאן פרידריך בלומנבך את הממותה הצמרית כמין מדעי על סמך עצמות ושיניים מאזור אוסטרודה שבהרי ההארץ בגרמניה ומסיביר. אין תאריך מוסכם לממצא הראשון אי פעם; מאוחר יותר נמצאו בסיביר גם גופות קפואות ששימרו עור ופרווה.',dimensions:'גובה בכתף: כ־3–3.5 מטרים. משקל: לרוב כ־4–6 טונות, לפי גיל ומין.',moreRefs:['mammoth-history']},
  rhino:{discovery:'כבר במאה ה־18 תועדו בסיביר גולגולות וקרניים מאובנות של קרנף קדום. בשנת 1799 נתן בלומנבך שם מדעי למין על סמך עצמות מאוספי אוניברסיטת גטינגן, ובכללן חומר שמקורו בסיביר. גילוי אחד ויחיד ראשון אינו ידוע בוודאות.',dimensions:'גובה בכתף: סביב 2 מטרים. משקל: כ־2 טונות, עם הבדלים בין פרטים והערכות.',moreRefs:['rhino-history','rhino-size']},
  muskox:{discovery:'גולגולת מאובנת שנמצאה בביג בון ליק שבקנטקי, ארצות הברית, תוארה כבר בשנת 1818 בידי קספר ויסטאר. ריצ׳רד הרלן נתן לשרידים שם מדעי בשנת 1825; רק מאוחר יותר הועבר המין לסוג Bootherium. לא ידוע מתי בדיוק נחשפה הגולגולת לראשונה.',dimensions:'השרידים הידועים כוללים בעיקר עצמות וגולגולות, ולכן קשה לקבוע טווח גובה ומשקל אמין למין הזה. הוא היה פר גדול וכבד יותר במבנהו מכבש המושק החי, אך מספר מדויק יהיה מטעה.',moreRefs:['musk-history']},
  'giant-deer':{discovery:'גולגולות וקרניים ענקיות נמצאו בביצות באירלנד במשך מאות שנים. בשנת 1697 תיאר תומאס מולינו גולגולת עם קרניים מאזור דארדיסטאון באירלנד; בשנת 1799 העניק בלומנבך למין שם מדעי. אלה תיעוד ותיאור מדעי, ולא בהכרח רגע הגילוי הראשון.',dimensions:'גובה בכתף: בערך 2 מטרים. מוטת הקרניים של זכר: עד כ־3.5 מטרים. משקל: עד כ־680 קילוגרם לפי דוגמה שמציג המוזיאון האמריקאי; הערכות שונות בין פרטים.',moreRefs:['deer-history','deer-size']},
