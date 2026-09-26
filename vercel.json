@@ -1,0 +1,1 @@
+{"buildCommand":"npm run build","outputDirectory":"dist","rewrites":[{"source":"/animal/:slug","destination":"/index.html"},{"source":"/sources","destination":"/index.html"}]}
