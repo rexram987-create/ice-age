@@ -54,3 +54,31 @@ const additions={
  'steppe-bison':{discovery:'קרניים, גולגולות ועצמות של ביזון קדום התגלו באתרים רבים באירואסיה, בלי שאפשר להצביע על ממצא ראשון מוסכם. בשנת 1827 פרסם לודוויג בויאנוס את התיאור המדעי של Bison priscus. ממצא מאוחר מרשים הוא גופה קפואה שנמצאה באלסקה ושמורה באוסף הסמיתסוניאן.',dimensions:'גובה בכתף: עד כ־2 מטרים. משקל מוערך: כ־700–800 קילוגרם בפרטים גדולים; ממצאים מאוכלוסיות שונות מצביעים על שונות בגודל.',moreRefs:['bison-history','bison-size']}
 };
 for(const animal of animals){Object.assign(animal,additions[animal.slug]);animal.refs.push(...animal.moreRefs)}
+// Remains refer to documented specimens; a mounted museum display may include reconstruction.
+export const remainsSources=[
+ ['mammoth-remains','המוזיאון האמריקאי להיסטוריה של הטבע — גורי ממותה קפואים','https://www.amnh.org/explore/news-blogs/baby-mammoth-ct-scan'],
+ ['rhino-remains','מוזיאון הטבע בקרקוב — הקרנף הצמרירי מסטארוניה','https://www.isez.pan.krakow.pl/en/natural-history-muzeum'],
+ ['musk-remains','המוזיאון הווירטואלי של איידהו — שלדים מזוהים של כבש המושק הקדמון','https://virtual.imnh.iri.isu.edu/Paleo/View/extinct_musk_ox/242'],
+ ['deer-remains','מוזיאון הטבע בווינה — תצוגות שלדים משוחזרים','https://www.nhm-wien.ac.at/en/press_/about_the_museum/museum'],
+ ['wolf-remains','לה בריאה — שלד זאב האימים וממצאי האתר','https://tarpits.org/stories/stories-extinction-and-survival'],
+ ['lion-remains','מחקר על שלד כמעט שלם של אריה המערות','https://pmc.ncbi.nlm.nih.gov/articles/PMC10570355/'],
+ ['lion-cubs','מחקר על גורי אריה מערות קפואים מסיביר','https://www.mdpi.com/2571-550X/4/3/24'],
+ ['bear-remains','מחקר על שני שלדי גורי דוב מערות מאיטליה','https://arpi.unipi.it/handle/11568/1326888'],
+ ['leopard-remains','האקדמיה למדעים של קליפורניה — שלד נמר שלג חי','https://www.calacademy.org/snow-leopard-casmam16741'],
+ ['leopard-fossils','מחקר על מאובני שושלת נמר השלג','https://pmc.ncbi.nlm.nih.gov/articles/PMC11734717/'],
+ ['horse-remains','סקירת סוסי בר קדומים — שלד סוסה כמעט שלם','https://www.mdpi.com/2571-550X/5/3/38'],
+ ['bison-remains','מחקר על שרידי ממותה, ביזון הסטפה וסוס קפואים מסיביר','https://pubmed.ncbi.nlm.nih.gov/24148659/']
+];
+const remains={
+ mammoth:['כן, נמצאו גם שלדים וגם גורי ממותה צמרית קפואים ששימרו עור, שרירים ורקמות רכות. ״שמור היטב״ אינו אומר שכל איבר השתמר; למשל, בגורה ליובה חסרו רקמות מסוימות.',['mammoth-remains']],
+ rhino:['כן. בסטארוניה שבאוקראינה נמצאה גופה שמורה במיוחד של קרנף צמרירי, עם עור, רקמות רכות ואיברים פנימיים. הקרניים והפרסות שלה לא השתמרו.',['rhino-remains']],
+ muskox:['נמצאו גולגולות ושלדים המזוהים עם המין, ובהם שלושה שלדים קשורים מאוסף איידהו. לא מצאתי תיעוד מהימן לגופה שלמה עם עור ופרווה, ולא ידוע שכל עצם נשמרה בכל אחד מהשלדים.',['musk-remains']],
+ 'giant-deer':['נמצאו גולגולות, קרניים ועצמות שלד רבות. מוזיאונים מציגים שלדים מורכבים ומשוחזרים של האייל הענק; תצוגה של שלד מלא אינה הוכחה שאותו פרט נמצא בשלמותו.',['deer-remains']],
+ 'dire-wolf':['כן, שרידים רבים נמצאו בלה בריאה שבקליפורניה, כולל שלדים וגולגולות של זאב האימים. לא נמצאה שם גופה שלמה עם עור ופרווה.',['wolf-remains']],
+ 'cave-lion':['כן. תואר שלד כמעט שלם של אריה מערות, ובסיביר נמצאו גם גורי אריה מערות קפואים עם פרווה ורקמות רכות. הגורים הם פרטים צעירים, לא גופות של אריות בוגרים.',['lion-remains','lion-cubs']],
+ 'cave-bear':['נמצאו שלדים רבים של דובי מערות. מחקר מתאר שני שלדי גורים שנמצאו במערה באיטליה; באחד מהם הגולגולת וחלק מחוליות עמוד השדרה עדיין מחוברות.',['bear-remains']],
+ 'snow-leopard':['נמר השלג הוא מין שחי גם כיום, ולכן קיימים שלדים שלמים של פרטים מודרניים. המאובנים הקדומים שנחקרו משושלתו הם חלקיים, ואין לתאר אותם כגופה שלמה של ״נמר שלג קדמון״.',['leopard-remains','leopard-fossils']],
+ 'wild-horse':['נמצאו שלדים כמעט שלמים של סוסי בר מתקופת הקרח, וגם גופות קפואות חלקיות של סוסים קדומים. סוס פז׳בלסקי חי כיום; לא כל סוס מאובן הוא סוס פז׳בלסקי.',['horse-remains','bison-remains']],
+ 'steppe-bison':['כן. במחקר על ממצאים קפואים מסיביר תואר ביזון סטפה שגופו השתמר בשלמות יוצאת דופן, נוסף על עצמות וגולגולות שנמצאו במקומות אחרים.',['bison-remains']]
+};
+for(const animal of animals){[animal.remains,animal.remainsRefs]=remains[animal.slug]}
